@@ -1,0 +1,39 @@
+.contenidor {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    -webkit-perspective: 700;
+}
+
+.carta {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style:  preserve-3d;
+    transition: 2s;
+}
+
+.carta:hover {
+    transform: rotateY(180deg);
+}
+
+.costat {
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.front {
+    background-color: orangered;
+}
+
+.back {
+    background-color: black;
+    transform: rotateY(180deg);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
