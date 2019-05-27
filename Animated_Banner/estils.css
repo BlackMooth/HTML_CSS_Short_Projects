@@ -1,0 +1,24 @@
+.banner {
+    width: 700px;
+    height: 300px;
+    border: 3px solid blue;
+    margin: auto;
+    background-size: 100% 100%;
+    
+    animation: banner 10s infinite;
+}
+
+@keyframes banner {
+    0%, 47.5% {
+        background-image: url(logo.png);
+        opacity: 1;
+    }
+    
+    48%, 52% {
+        opacity: 0.1;
+    }
+    
+    52.5%, 100% {
+        background-image: url(mapa.jpg);
+    }
+}
